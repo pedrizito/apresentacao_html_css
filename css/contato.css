@@ -1,0 +1,23 @@
+.contato {
+  background-color: #c2c2c2;
+  padding: 40px 60px;
+}
+
+.contato-lista li {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+p,
+a,
+span {
+  color: #000;
+}
+
+p {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+}

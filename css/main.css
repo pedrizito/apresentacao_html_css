@@ -1,0 +1,83 @@
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  column-gap: 130px;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+.principal img {
+  margin-left: 20px;
+  position: relative;
+  border-radius: 50%;
+  border: #f25a5a solid 4px;
+  object-fit: cover;
+}
+
+.principal h1 {
+  position: relative;
+  font-size: 4rem;
+  color: #363636;
+  justify-self: center;
+}
+
+.principal h1::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 3px;
+  background-color: #f25a5a;
+  top: -30px;
+  left: 40px;
+}
+
+.principal h1::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 3px;
+  background-color: #f25a5a;
+  bottom: -30px;
+  left: 40px;
+}
+
+@media (max-width: 1080px) {
+  .principal h1 {
+    font-size: 3rem;
+  }
+  .principal h1::before {
+    width: 200px;
+  }
+  .principal h1::after {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .principal {
+    grid-template-columns: 1fr;
+    background-image: url("/imgs/keyboard.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .principal h1 {
+    color: #f25a5a;
+  }
+
+  .principal img {
+    display: none;
+  }
+
+  .principal h1::after,
+  .principal h1::before {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .principal h1 {
+    font-size: 2rem;
+  }
+}

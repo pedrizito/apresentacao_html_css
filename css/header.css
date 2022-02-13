@@ -1,0 +1,42 @@
+.cabecalho {
+  background-color: #c2c2c2;
+  display: flex;
+  padding: 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho a {
+  font-size: 1rem;
+  color: #f25a5a;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.cabecalho-menu {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media (max-width: 901px) {
+  .cabecalho {
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cabecalho-menu {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+    padding-bottom: 20px;
+    line-break: 0;
+  }
+
+  .cabecalho-menu a {
+    background: #363636;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+}
